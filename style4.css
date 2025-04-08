@@ -1,0 +1,56 @@
+/* Reset & Umum */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #bae2fe;
+    color: black;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #07424b;
+    color: rgb(247, 238, 238);
+}
+
+/* Navigasi */
+.nav-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.nav-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    background: #046f8d;
+    color: white;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: #066c89;
+    transform: scale(1.05);
+}
+
+.active {
+    background: #0c6b93;
+}
+
+/* Dark Mode Toggle */
+#toggleDarkMode {
+    background-color: rgba(220, 214, 222, 0.2);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0;}

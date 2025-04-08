@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #CCFFFF;
+      color: #222;
+      transition: all 0.3s;
+    }
+
+    header {
+      background-color: #2554C7;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.3em;
+      margin: 0;
+    }
+
+    .dark-toggle {
+      cursor: pointer;
+      background-color: #040720;
+      border-radius: 8px;
+      padding: 5px 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #5CB3FF;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      margin: 6px;
+      padding: 8px 16px;
+      background-color: #040720;
+      color: white;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .card h2 {
+      margin: 10px 0 5px;
+    }
+
+    .card a {
+      color: #2e52d0;
+      text-decoration: none;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin: 8px;
+      padding: 10px 20px;
+      background-color: #ececec;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      margin-top: 40px;
+      padding: 15px;
+      color: #555;
+    }
+
+    /* Dark Mode */
+    body.dark {
+      background-color: #1a1a1a;
+      color: white;
+    }
+
+    body.dark .card {
+      background-color: #333;
+    }
+
+    body.dark .social-links a {
+      background-color: #555;
+      color: white;
+    }
+
+    body.dark nav {
+      background-color: #3a2b4f;
+    }
+
+    body.dark nav a {
+      background-color: #5e35b1;
+    }
+
+    body.dark header {
+      background-color: #4527a0;
+    }
+
+    body.dark .dark-toggle {
+      background-color: #7e57c2;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="dark-toggle" onclick="toggleDarkMode()">Dark Mode 🌙</div>
+  </header>
+
+  <nav>
+    <a href="LINK1.html">Home</a>
+    <a href="penerapan-ti.html">Penerapan TI</a>
+    <a href="kesan-pesan.html">Kesan & Pesan</a>
+    <a href="bebas.html">Halaman Bebas</a>
+  </nav>
+
+  <div class="container">
+
+    <div class="intro">
+      <h2>Selamat Datang!</h2>
+      <p>
+        Website ini dibuat untuk memenuhi tugas mata kuliah Pengantar Teknologi Informasi
+        yang diampu oleh Ibu Athanasia Octaviani Puspita Dewi, S.Kom., M.Cs.
+      </p>
+    </div>
+
+    <div class="card">
+      <img src="dhanu.jpg" alt="Foto Profil">
+      <h2>Dhanu Ary Budianto</h2>
+      <p><strong>NIM:</strong> <a href="#">13040124140123</a></p>
+      <p>Universitas Diponegoro</p>
+	  <h3>My Social Media</h3>
+      <div class="social-links">
+        <a href="https://www.instagram.com/dhnuu._?igsh=MXFrNTliNzAxMmhxMw%3D%3D&utm_source=qr">Instagram</a>
+        <a href="https://www.tiktok.com/@_sw4gyboy?_t=ZS-8vKquKcYlEY&_r=1">TikTok</a>
+        <a href="https://wa.me/089528890080">WhatsApp</a>
+      </div>
+    </div>
+	
+	 <div class="card">
+      <img src="nopal.jpg" alt="Foto Profil">
+      <h2>Naufal Zain Ramadhan</h2>
+      <p><strong>NIM:</strong> <a href="#">13040124140121</a></p>
+      <p>Universitas Diponegoro</p>
+	  <h3>My Social Media</h3>
+      <div class="social-links">
+        <a href="https://www.instagram.com/naufalzainr?igsh=aTg2Mm5tbHBwOTQ%3D&utm_source=qr">Instagram</a>
+        <a href="https://www.tiktok.com/@lakunaeuoniaa?_t=ZS-8vKqvuocgPR&_r=1">TikTok</a>
+        <a href="https://wa.me/087775405808">WhatsApp</a>
+      </div>
+    </div>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+/* style3.css */
+
+/* Reset default margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background: #007bff; /* Warna biru */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.judul {
+    margin-bottom: 10px;
+    font-size: 2.5em; /* Ukuran font lebih besar */
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav ul li a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Button */
+#toggleDarkMode {
+    background: #fff;
+    color: #007bff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#toggleDarkMode:hover {
+    background: #e2e2e2;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 800px; /* Membatasi lebar konten */
+    margin: 0 auto; /* Memusatkan konten */
+}
+
+.kesan-pesan-container {
+    display: flex;
+    flex-direction: column; /* Mengatur konten dalam kolom */
+    gap: 20px; /* Jarak antar kotak */
+}
+
+.kesan-box, .pesan-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.kesan-box h2, .pesan-box h2 {
+    margin-bottom: 10px;
+    font-size: 1.8em; /* Ukuran font untuk judul */
+}
+
+.kesan-box p, .pesan-box p {
+    font-size: 1em; /* Ukuran font untuk teks */
+    color: #666;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .kesan-box, .pesan-box {
+        padding: 15px; /* Mengurangi padding pada layar kecil */
+    }
+
+    .nav ul li {
+        margin: 0 10px; /* Mengurangi margin pada menu */
+    }
+}
